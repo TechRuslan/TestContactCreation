@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeTest;
 
 public class TestBase {
 
-    protected ApplicationManager app;
+    public ApplicationManager app;
 
     @BeforeTest
     public void setUp() throws Exception {
