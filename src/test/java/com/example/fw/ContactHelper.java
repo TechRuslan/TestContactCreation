@@ -1,6 +1,7 @@
 package com.example.fw;
 
 import com.example.tests.ContactData;
+import com.example.tests.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 
@@ -11,10 +12,10 @@ public class ContactHelper extends HelperBase{
     }
 
     public void createContact() {
-        driver.findElement(By.linkText("add new")).click();
+        click(By.linkText("add new"));
     }
 
-    public void populateContactFields() {
+    public void populateContactFields(ApplicationManager applicationManager, TestBase testBase) {
         driver.findElement(By.name("firstname")).clear();
         driver.findElement(By.name("firstname")).sendKeys("James");
         driver.findElement(By.name("lastname")).clear();
@@ -40,6 +41,7 @@ public class ContactHelper extends HelperBase{
     }
 
     public void emptyContactFields(ContactData contactData) {
+        type(By.name("firstname"), contactData.getFirstname());
         driver.findElement(By.name("firstname")).clear();
         driver.findElement(By.name("firstname")).sendKeys(contactData.getFirstname());
         driver.findElement(By.name("lastname")).clear();
@@ -65,10 +67,10 @@ public class ContactHelper extends HelperBase{
     }
 
     public void saveContact() {
-        driver.findElement(By.name("submit")).click();
+        click(By.name("submit"));
     }
 
-    public void addContactToGroup(NavigationHelper navigationHelper) {
-        driver.findElement(By.name("add")).click();
-    }
+//    public void addContactToGroup(NavigationHelper navigationHelper) {
+//        driver.findElement(By.name("add")).click();
+//    }
 }

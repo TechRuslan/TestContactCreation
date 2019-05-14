@@ -13,10 +13,10 @@ public class NavigationHelper extends HelperBase {
     }
 
     public void openGroupsPage() {
-        driver.findElement(By.linkText("groups")).click();
+        click(By.linkText("groups"));
     }
 
     public void openHomePage() {
-        driver.findElement(By.linkText("home")).click();
+        click(By.linkText("home"));
     }
 }

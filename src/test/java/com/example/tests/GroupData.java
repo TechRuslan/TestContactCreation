@@ -1,9 +1,10 @@
 package com.example.tests;
 
 public class GroupData {
-    public String name;
-    public String header;
-    public String footer;
+
+    private String name;
+    private String header;
+    private String footer;
 
     public GroupData(String name, String header, String footer) {
         this.name = name;
@@ -24,5 +25,16 @@ public class GroupData {
 
     public String getGroupfooter() {
         return footer;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setHeader(String header) {
+        this.header = header;
+    }
+
+    public void setFooter(String footer) {
+        this.footer = footer;
     }
 }

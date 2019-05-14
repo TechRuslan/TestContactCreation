@@ -10,20 +10,17 @@ public class GroupHelper extends HelperBase {
     }
 
     public void createGroup() {
-        driver.findElement(By.name("new")).click();
+        click(By.name("new"));
     }
 
     public void populateGroupFields(GroupData groupData) {
-        driver.findElement(By.name("group_name")).clear();
-        driver.findElement(By.name("group_name")).sendKeys(groupData.getGroupname());
-        driver.findElement(By.name("group_header")).clear();
-        driver.findElement(By.name("group_header")).sendKeys(groupData.getGroupheader());
-        driver.findElement(By.name("group_footer")).clear();
-        driver.findElement(By.name("group_footer")).sendKeys(groupData.getGroupfooter());
+        type(By.name("group_name"), groupData.getGroupname());
+        type(By.name("group_header"), groupData.getGroupheader());
+        type(By.name("group_footer"), groupData.getGroupfooter());
     }
 
     public void saveGroup() {
-        driver.findElement(By.name("submit")).click();
+        click(By.name("submit"));
     }
 
 }
