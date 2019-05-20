@@ -6,32 +6,33 @@ public class GroupData {
     private String header;
     private String footer;
 
+    public GroupData() {
+    }
+
     public GroupData(String name, String header, String footer) {
         this.name = name;
         this.header = header;
         this.footer = footer;
     }
 
-    public GroupData() {
-    }
-
-    public String getGroupname() {
+    public String getName() {
         return name;
     }
 
-    public String getGroupheader() {
-        return header;
-    }
-
-    public String getGroupfooter() {
-        return footer;
-    }
     public void setName(String name) {
         this.name = name;
     }
 
+    public String getHeader() {
+        return header;
+    }
+
     public void setHeader(String header) {
         this.header = header;
+    }
+
+    public String getFooter() {
+        return footer;
     }
 
     public void setFooter(String footer) {
