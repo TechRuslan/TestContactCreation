@@ -2,6 +2,8 @@ package com.example.fw;
 
 import org.openqa.selenium.By;
 
+import java.util.concurrent.TimeUnit;
+
 public class NavigationHelper extends HelperBase {
 
     public NavigationHelper(ApplicationManager manager) {

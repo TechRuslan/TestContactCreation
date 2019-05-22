@@ -18,6 +18,7 @@ public class GroupCreationTest extends TestBase{
 
         app.getGroupHelper().populateGroupFields(groupData);
         app.getGroupHelper().saveGroup();
+//        app.getNavigationHelper().openGroupsPage();
     }
 
     @Test

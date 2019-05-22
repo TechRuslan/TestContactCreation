@@ -3,6 +3,8 @@ package com.example.fw;
 import com.example.tests.GroupData;
 import org.openqa.selenium.By;
 
+import java.util.concurrent.TimeUnit;
+
 public class GroupHelper extends HelperBase {
 
     public GroupHelper(ApplicationManager manager) {
@@ -23,4 +25,25 @@ public class GroupHelper extends HelperBase {
         click(By.name("submit"));
     }
 
+    public void openGroupsPage() {
+        click(By.linkText("groups"));
+    }
+
+    public void deleteGroup(int index) {
+        selectGroupByIndex(index);
+        click(By.name("delete"));
+    }
+
+    private void selectGroupByIndex(int index) {
+        click(By.xpath("//form[2]/input[@name='selected[]'][" + index + "]"));
+    }
+
+    public void initGroupModification(int index) {
+        selectGroupByIndex(index);
+        click(By.name("edit"));
+    }
+
+    public void submitGroupModification() {
+        click(By.name("update"));
+    }
 }

@@ -30,7 +30,7 @@ public class ContactCreationTest extends TestBase {
         //app.getNavigationHelper().contactHelper.addContactToGroup(app.getNavigationHelper());
     }
 
-    @Test
+/*    @Test
     public void testEmptyContactCreation() throws Exception {
         app.getNavigationHelper().openMainPage();
         app.getNavigationHelper().openHomePage();
@@ -44,8 +44,8 @@ public class ContactCreationTest extends TestBase {
         contactData.setMobile("");
         contactData.setWork("");
         contactData.setEmail("");
-//        contactData.setBirthday("");
-//        contactData.setBirthmonth("");
+        contactData.setBirthday("");
+        contactData.setBirthmonth("");
         contactData.setBirthyear("");
         contactData.setAddress2("");
         contactData.setPhone("");
@@ -55,4 +55,5 @@ public class ContactCreationTest extends TestBase {
         app.getNavigationHelper().openHomePage();
         //app.getNavigationHelper().contactHelper.addContactToGroup(app.getNavigationHelper());
     }
+*/
 }
