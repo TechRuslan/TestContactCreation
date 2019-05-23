@@ -3,8 +3,6 @@ package com.example.fw;
 import com.example.tests.GroupData;
 import org.openqa.selenium.By;
 
-import java.util.concurrent.TimeUnit;
-
 public class GroupHelper extends HelperBase {
 
     public GroupHelper(ApplicationManager manager) {

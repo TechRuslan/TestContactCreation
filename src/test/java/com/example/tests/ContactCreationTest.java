@@ -30,31 +30,4 @@ public class ContactCreationTest extends TestBase {
         app.getNavigationHelper().openHomePage();
         //app.getNavigationHelper().contactHelper.addContactToGroup(app.getNavigationHelper());
     }
-
-/*    @Test
-    public void testEmptyContactCreation() throws Exception {
-        app.getNavigationHelper().openMainPage();
-        app.getNavigationHelper().openHomePage();
-        app.getContactHelper().createContact();
-
-        ContactData contactData = new ContactData();
-        contactData.setFirstname("");
-        contactData.setLastname("");
-        contactData.setAddress("");
-        contactData.setHome("");
-        contactData.setMobile("");
-        contactData.setWork("");
-        contactData.setEmail("");
-        contactData.setBirthday("");
-        contactData.setBirthmonth("");
-        contactData.setBirthyear("");
-        contactData.setAddress2("");
-        contactData.setPhone("");
-
-        app.getContactHelper().populateContactFields(contactData);
-        app.getContactHelper().saveContact();
-        app.getNavigationHelper().openHomePage();
-        //app.getNavigationHelper().contactHelper.addContactToGroup(app.getNavigationHelper());
-    }
-*/
 }
