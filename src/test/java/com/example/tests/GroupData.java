@@ -2,7 +2,7 @@ package com.example.tests;
 
 public class GroupData {
 
-    private String name;
+    public String name;
     private String header;
     private String footer;
 
@@ -37,5 +37,12 @@ public class GroupData {
 
     public void setFooter(String footer) {
         this.footer = footer;
+    }
+
+    @Override
+    public String toString() {
+        return "GroupData{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }
